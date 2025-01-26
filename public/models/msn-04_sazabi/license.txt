@@ -1,0 +1,8 @@
+Model Information:
+* title:	MSN-04 Sazabi
+* source:	https://sketchfab.com/3d-models/msn-04-sazabi-fd77ee1d7f7f45a8a6372bb12c00c3de
+* author:	Tigerar1 (https://sketchfab.com/allanromanreyes)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

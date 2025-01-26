@@ -1,95 +1,137 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+import {
+  Box,
+  position,
+  Text,
+  useColorModeValue,
+  Spinner,
+  Flex,
+  Avatar,
+  Button,
+  Icon,
+} from "@chakra-ui/react";
 
+import React from "react";
+
+import Model from "./components/Model";
+
+import { ChevronRightIcon } from "@chakra-ui/icons";
+import { BioSection, BioYear } from "./components/Bio.js";
 export default function Home() {
+  const BgColor = useColorModeValue("#f0e7db", "#202023");
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <Box width={"100%"} height={"150vh"}>
+      <Flex justifyContent={"center"}>
+        <Model color={BgColor} />
+      </Flex>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+      <Flex justifyContent={"center"}>
+        <Box
+          bg={useColorModeValue("#ebd3b4  ", "#19191c")}
+          w={"600px"}
+          h={"50px"}
+          textAlign={"Center"}
+          p={"6px"}
+        >
+          <Text fontSize="xl">Welcome to my portfolio page.</Text>
+
+          <Flex margin={"20px"}>
+            <Flex flexDir={"column"}>
+              <Text
+                as={"b"}
+                fontSize="4xl"
+                margin={"10px"}
+                alignItems={"center"}
+              >
+                Marwan Khalil
+              </Text>
+              <Text fontSize="md" wordBreak={"keep-all"}>
+                {" "}
+                Digital Craftsman ( Innovator/Developer/Designer ){" "}
+              </Text>
+            </Flex>
+            <Avatar
+              marginLeft={"30px"}
+              border="3px solid white"
+              size="xl"
+              name="Marwan Khalil"
+              src="/Images/Works/pfp.png"
             />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
+          </Flex>
+
+          <Box textAlign={"left"}>
+            <Text
+              fontSize={"lg"}
+              as={"b"}
+              textDecoration={"underline"}
+              textDecorationColor={"#525252"}
+              textDecorationThickness={"4px"}
+              textUnderlineOffset={"6px"}
+            >
+              About me
+            </Text>
+            <Text m={"10px"}>
+              My name is Marwan, and I’m a curious person who’s always striving
+              to learn new things and become the best version of myself. I have
+              a strong interest in problem-solving and enjoy tackling complex
+              challenges. In my free time, I like going to the gym and
+              experimenting with new recipes in the kitchen – it helps me stay
+              active and creative. I’m also passionate about game development
+              and love building plastic models, which allows me to combine my
+              attention to detail with my creative side.
+            </Text>
+          </Box>
+          <Button m={"10px"} 
+          as={"a"}
+          href="/projects"
           >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+            {" "}
+            My portfolio <Icon as={ChevronRightIcon}></Icon>
+          </Button>
+
+          <Box textAlign={"left"} marginBottom={"10px"}>
+            <Text
+              fontSize={"lg"}
+              as={"b"}
+              textDecoration={"underline"}
+              textDecorationColor={"#525252"}
+              textDecorationThickness={"4px"}
+              textUnderlineOffset={"6px"}
+            >
+              Bio
+            </Text>
+
+            <BioSection>
+              <BioYear>2005</BioYear>
+              Born in Iraq
+            </BioSection>
+            <BioSection>
+              <BioYear>2024 to present</BioYear>I am studying Computer
+              Engineering at Högskolan i Gävle.
+            </BioSection>
+          </Box>
+
+          <Box textAlign={"left"} marginBottom={"10px"}>
+            <Text
+              fontSize={"lg"}
+              as={"b"}
+              textDecoration={"underline"}
+              textDecorationColor={"#525252"}
+              textDecorationThickness={"4px"}
+              textUnderlineOffset={"6px"}
+            >
+              I ♥
+            </Text>
+            <Text>
+              {" "}
+              Programing, WebDevelopment, GameDevelopment, Building plastic
+              models, learning new things, Math{" "}
+            </Text>
+
+            <Text > <br/> You can reach me at <Box  as={"b"}> marwan.khalil.basim@gmail.com.</Box> </Text>
+          </Box>
+        </Box>
+      </Flex>
+    </Box>
   );
 }
