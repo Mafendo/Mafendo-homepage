@@ -53,7 +53,7 @@ export default function Home() {
               </Text>
               <Text  fontSize={{ base: "sm", md: "sm", lg: "md" }} wordBreak={"keep-all"}>
                 {" "}
-                Digital Craftsman ( Innovator/Developer/Designer ){" "}
+                Digital Craftsman (Innovator/Developer/Designer){" "}
               </Text>
             </Flex>
             <Avatar

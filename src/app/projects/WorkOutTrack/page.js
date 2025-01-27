@@ -23,7 +23,7 @@ import { ChevronRightIcon } from "@chakra-ui/icons";
 export default function Projects() {
   const BgColor = useColorModeValue("#f0e7db", "#202023");
   return (
-    <Box width={"100%"} height={"200vh"}>
+    <Box width={"100%"} height={"auto"}>
       <Flex justifyContent={"center"}>
         <Model color={BgColor} />
       </Flex>
