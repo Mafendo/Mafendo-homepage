@@ -25,7 +25,13 @@ export default function Home() {
         <Model color={BgColor} />
       </Flex>
 
-      <Flex justifyContent={"center"}>
+      <Flex
+        justifyContent={"center"}
+        overflowWrap="break-word"
+        wordBreak="break-word"
+        whiteSpace="normal"
+        boxSize={"border-box"}
+      >
         <Box
           bg={useColorModeValue("#ebd3b4  ", "#19191c")}
           w={"600px"}
@@ -33,19 +39,19 @@ export default function Home() {
           textAlign={"Center"}
           p={"6px"}
         >
-          <Text fontSize="xl">Welcome to my portfolio page.</Text>
+          <Text  fontSize={{ base: "md", md: "lg", lg: "xl" }}>Welcome to my portfolio page.</Text>
 
-          <Flex margin={"20px"}>
+          <Flex margin={"20px"} flexDir={{base: "column",sm:"row"}}>
             <Flex flexDir={"column"}>
               <Text
                 as={"b"}
-                fontSize="4xl"
+                fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}
                 margin={"10px"}
                 alignItems={"center"}
               >
                 Marwan Khalil
               </Text>
-              <Text fontSize="md" wordBreak={"keep-all"}>
+              <Text  fontSize={{ base: "sm", md: "sm", lg: "md" }} wordBreak={"keep-all"}>
                 {" "}
                 Digital Craftsman ( Innovator/Developer/Designer ){" "}
               </Text>
@@ -70,7 +76,7 @@ export default function Home() {
             >
               About me
             </Text>
-            <Text m={"10px"}>
+            <Text m={"10px"} fontSize={{ base: "sm", md: "md", lg: "lg" }}>
               My name is Marwan, and I’m a curious person who’s always striving
               to learn new things and become the best version of myself. I have
               a strong interest in problem-solving and enjoy tackling complex
@@ -81,17 +87,14 @@ export default function Home() {
               attention to detail with my creative side.
             </Text>
           </Box>
-          <Button m={"10px"} 
-          as={"a"}
-          href="/projects"
-          >
+          <Button m={"10px"} as={"a"} href="/projects">
             {" "}
             My portfolio <Icon as={ChevronRightIcon}></Icon>
           </Button>
 
           <Box textAlign={"left"} marginBottom={"10px"}>
             <Text
-              fontSize={"lg"}
+             fontSize={{ base: "lg", sm: "md", xs: "sm" }}
               as={"b"}
               textDecoration={"underline"}
               textDecorationColor={"#525252"}
@@ -113,7 +116,7 @@ export default function Home() {
 
           <Box textAlign={"left"} marginBottom={"10px"}>
             <Text
-              fontSize={"lg"}
+              fontSize={{ base: "lg", sm: "md", xs: "sm" }}
               as={"b"}
               textDecoration={"underline"}
               textDecorationColor={"#525252"}
@@ -128,7 +131,11 @@ export default function Home() {
               models, learning new things, Math{" "}
             </Text>
 
-            <Text > <br/> You can reach me at <Box  as={"b"}> marwan.khalil.basim@gmail.com.</Box> </Text>
+            <Text>
+              {" "}
+              <br /> You can reach me at{" "}
+              <Box as={"b"}> marwan.khalil.basim@gmail.com.</Box>{" "}
+            </Text>
           </Box>
         </Box>
       </Flex>

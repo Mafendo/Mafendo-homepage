@@ -19,6 +19,7 @@ canvas {
   canvas {
     width: 160px !important;
     height: 160px !important;
+    margin: 55px;
   }
 }
 

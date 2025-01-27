@@ -42,11 +42,15 @@ export default function Projects() {
 
           <Text fontSize={"md"}> Don't Sleep</Text>
         </Flex>
-        <Box width={"600px"}>
-          <Text marginBottom={"20px"}>
+        <Box maxW={"600px"}>
+          <Text
+            marginBottom={"20px"}
+           
+            
+          >
             Our high school project entails the creation of a platform and
             puzzle-based video game infused with elements of horror, titled
-            "Don't Sleep." Inspired by classics like "Limbo" and "Inside ,"
+            "Don't Sleep." Inspired by classics like "Limbo" and "Inside,"
             <br />
             <br />
             you can try it{" "}

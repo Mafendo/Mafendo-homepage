@@ -42,7 +42,7 @@ export default function Projects() {
 
           <Text fontSize={"md"}> Lost Ronin</Text>
         </Flex>
-        <Box width={"600px"}>
+        <Box maxW={"600px"}>
           <Text marginBottom={"20px"}>
             Lost Ronin a beat-'em-up game inspired by the Edo period. It explores a rich
             historical theme with unique visual designs and gameplay mechanics.

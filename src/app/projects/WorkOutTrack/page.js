@@ -42,7 +42,7 @@ export default function Projects() {
 
           <Text fontSize={"md"}> WorkOutTrack</Text>
         </Flex>
-        <Box width={"600px"}>
+        <Box maxW={"600px"}>
           <Text marginBottom={"20px"}>
             WorkOutTrack is a simple app that helps you track your workout
                 sets and weights, then suggests your next goal based on your
