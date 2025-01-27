@@ -20,7 +20,7 @@ import { BioSection, BioYear } from "./components/Bio.js";
 export default function Home() {
   const BgColor = useColorModeValue("#f0e7db", "#202023");
   return (
-    <Box width={"100%"} height={"150vh"}>
+    <Box width={"100%"} height={"1600px"}>
       <Flex justifyContent={"center"}>
         <Model color={BgColor} />
       </Flex>

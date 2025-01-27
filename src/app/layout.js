@@ -5,14 +5,18 @@ import ChakraWrapper from "./ChakraWrapper";
 import theme from "./theme";
 import { use } from "react";
 import { ChakraProvider, ColorModeScript,useColorModeValue } from "@chakra-ui/react";
-
+import './globals.css';
 
 
 export default function RootLayout({ children }) {
  
   return (
     <html lang="sv" suppressHydrationWarning>
-      <head></head>
+      <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+      </head>
       <body suppressHydrationWarning>
         
         <ChakraWrapper>

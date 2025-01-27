@@ -136,7 +136,7 @@ const ThreePage = ({ color }) => {
     }, [color]); // Rerun when `color` changes
 
     return (
-        <Box position="relative" width="640px" height="640px">
+        <Box position="relative" w={{ base: "640px", sm: "320px", xs: "160px" }} h={{ base: "640px", sm: "320px", xs: "160px" }}>
             {loading && (
                 <Box
                     position="absolute"

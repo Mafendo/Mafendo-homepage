@@ -61,7 +61,7 @@ const Navbar = () => {
 
           
           
-          <Link as={NextLink} href="/source" p={2}>
+          <Link as={NextLink} href="https://github.com/Mafendo/Mafendo-homepage" p={2}>
             <Flex align={"center"}>
               <Box as={FaGithub} w={4} h={4} mr={2} />
               <Box>Source</Box>
@@ -89,12 +89,12 @@ const Navbar = () => {
               size="lg"
             />
             <MenuList display={{ base: "block", md: "none" }}>
-              <MenuItem as={NextLink} href="/">
+              <MenuItem as={NextLink} href="/projects">
                 Projects
               </MenuItem>
 
           
-              <MenuItem as={NextLink} href="/source">
+              <MenuItem as={NextLink} href="https://github.com/Mafendo/Mafendo-homepage">
                 Source
               </MenuItem>
             </MenuList>
